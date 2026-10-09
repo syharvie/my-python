@@ -42,3 +42,16 @@ print(sorted(d1))
 # sortedKeys = sorted(count, key=count.get, reverse=True)
 # for key in sortedKeys:
 #     print(f'{key} 出现了 {count[key]} 次.')
+
+stocks = {
+    'AAPL': 191.88,
+    'GOOG': 1186.96,
+    'IBM': 149.24,
+    'ORCL': 48.44,
+    'ACN': 166.89,
+    'FB': 208.09,
+    'SYMC': 21.29
+}
+
+stock2 = {key: value for key, value in stocks.items() if value > 100 }
+print(stock2)
